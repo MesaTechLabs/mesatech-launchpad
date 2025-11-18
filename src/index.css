@@ -87,8 +87,9 @@ All colors MUST be HSL.
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent;
+    @apply bg-clip-text text-transparent no-underline;
     background: var(--gradient-primary);
+    text-decoration: none !important;
   }
 
   .hover-lift {

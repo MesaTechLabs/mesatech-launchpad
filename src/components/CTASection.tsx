@@ -15,7 +15,7 @@ const CTASection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-6xl font-black mb-6">
             ¿Lista para tener tu web{" "}
-            <span className="text-gradient">profesional</span>?
+            <span className="text-primary">profesional</span>?
           </h2>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             Da el primer paso hacia el crecimiento de tu negocio. Sin

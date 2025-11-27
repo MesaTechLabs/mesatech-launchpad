@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/mesatech-logo.png";
+import logo from "@/assets/mesatech-logo-white.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,7 +48,7 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="MesaTech - Tecnología que conecta" 
-              className="h-12 w-auto"
+              className="h-10 md:h-14 w-auto object-contain"
             />
           </button>
 

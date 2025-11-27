@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/mesatech-logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,9 +43,13 @@ const Navigation = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-2xl font-bold text-gradient hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity"
           >
-            &lt; MesaTech /&gt;
+            <img 
+              src={logo} 
+              alt="MesaTech - Tecnología que conecta" 
+              className="h-12 w-auto"
+            />
           </button>
 
           {/* Desktop Menu */}

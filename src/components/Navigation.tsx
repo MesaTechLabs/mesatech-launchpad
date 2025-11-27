@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/mesatech-logo-white.png";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,6 +64,7 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            <ThemeToggle />
             <a
               href="https://wa.me/351123456789"
               target="_blank"
@@ -99,12 +101,13 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <div className="px-4 pt-3">
+            <div className="px-4 pt-3 flex items-center gap-3">
+              <ThemeToggle />
               <a
                 href="https://wa.me/351123456789"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block"
+                className="flex-1"
               >
                 <Button className="w-full gradient-primary">WhatsApp</Button>
               </a>

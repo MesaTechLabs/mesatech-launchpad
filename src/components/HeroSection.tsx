@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import NeuralBackground from "./NeuralBackground";
 
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
@@ -15,14 +16,10 @@ const HeroSection = () => {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image with Overlay */}
+      {/* Background with Neural Network Animation */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroBg}
-          alt="Background"
-          className="w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 gradient-hero opacity-90" />
+        <div className="absolute inset-0 gradient-hero opacity-95" />
+        <NeuralBackground />
       </div>
 
       {/* Content */}

@@ -30,7 +30,7 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
             Páginas web profesionales y{" "}
-            <span className="text-primary">económicas</span> en Portugal
+            <span className="text-primary">económicas</span> para tu negocio
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             Diseños modernos, entrega rápida y precios claros para emprendedores

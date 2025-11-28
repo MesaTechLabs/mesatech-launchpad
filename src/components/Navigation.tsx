@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/mesatech-logo-white.png";
 import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
@@ -44,13 +43,11 @@ const Navigation = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("hero")}
-            className="hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity group"
           >
-            <img 
-              src={logo} 
-              alt="MesaTech - Tecnología que conecta" 
-              className="h-10 md:h-14 w-auto object-contain"
-            />
+            <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary via-blue-500 to-primary bg-clip-text text-transparent">
+              &lt;MesaTech /&gt;
+            </span>
           </button>
 
           {/* Desktop Menu */}

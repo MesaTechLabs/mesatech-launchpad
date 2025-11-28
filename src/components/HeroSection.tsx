@@ -18,7 +18,12 @@ const HeroSection = () => {
     >
       {/* Background with Neural Network Animation */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 gradient-hero opacity-95" />
+        <img 
+          src={heroBg} 
+          alt="Technology background" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 gradient-hero opacity-80" />
         <NeuralBackground />
       </div>
 
